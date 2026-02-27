@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Chuks Kitchen 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive food ordering web application showcasing authentic Nigerian home cooking. Built as a frontend project with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🔗 Live Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://chuks-kitchen-pi.vercel.app/](https://chuks-kitchen-pi.vercel.app/)
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Chuks Kitchen is a static frontend web application for a Nigerian home-cooking food service. The app allows users to browse food categories, explore menu items, and manage a cart, all with a clean, responsive design across mobile and desktop screens.
 
-## Expanding the ESLint configuration
+## 📄 Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Onboarding** — Landing page introducing the brand with feature highlights
+- **Login** — User sign-in form with validation
+- **Sign Up** — New account registration form with validation
+- **Home** — Hero section, popular categories and chef's specials
+- **Explore** — Full menu with categories and food listings
+- **Cart** — Order management with quantity controls and item removal
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React** — Component-based UI
+- **TypeScript** — Type safety
+- **Tailwind CSS** — Utility-first styling
+- **Vite** — Build tool and dev server
+- **React Router DOM** — Client-side routing
+- **React Hook Form** — Form handling and validation
+- **Lucide React** — Icons
+- **React icons** — Icons
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📱 Responsive Design
+
+The application is fully responsive across:
+- Mobile (320px and above)
+- Tablet (768px and above)
+- Desktop (1024px and above)
+- Large screens (1280px and above)
+- 
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/chuks-kitchen.git
+
+# Navigate into the project
+cd chuks-kitchen
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👩‍💻 Developer
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Temitope Abiola**
